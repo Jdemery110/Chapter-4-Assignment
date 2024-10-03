@@ -1,0 +1,6 @@
+Q1) Can you explain why it says Identifier expected, found =? In other words, why identifier
+expected?
+This means the parser encountered an assignment operator (=) when it was expecting a valid variable (identifier) to assign a value to. The issue likely arose because the parser misidentified elements of the assignment expression. Instead of correctly recognizing an identifier, such as A, it encountered the = sign prematurely, leading to the error.
+
+Q2) Why do you think the error message: equal sign expected, found D?
+This shows that the parser expected an = after the float keyword to assign a value to the variable D, but instead encountered the identifier D. This suggests that the parser mishandled the declaration float D = 2.1;, assuming the = should immediately follow the float keyword, leading to confusion when it didn't.
